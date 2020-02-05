@@ -1,0 +1,1536 @@
+
+/*
+style.css
+---------
+
+Par Sowa Killian
+
+*/
+
+
+/* PAGE 1 - INDEX.HTML */
+
+
+/* PRELOADER*/
+
+.flbackdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #991914;
+  z-index: 99999; /*Making sure its on top*/
+}
+
+.preloader
+
+    {
+
+	   background-color: #991914;
+        z-index: 199;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        opacity:1;
+        transition: all ease .8s;
+
+    }
+
+.preloader embed
+
+    {
+
+	   width: 100%;
+        height: 100%;
+        background: white;
+
+    }
+
+.closing
+
+    {
+
+	   opacity: 0;
+
+    }
+
+
+svg
+
+    {
+
+	   max-width: 25em;
+	   border-radius: 3px;
+	   background: #991914;
+	   fill: none;
+	   stroke: white;
+	   stroke-linecap: round;
+	   stroke-width: 8%;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform:translate(-50%,-50%);
+       z-index: 200;
+
+
+    }
+
+use
+
+    {
+
+	   stroke: #eab830;
+	   animation: a 2s linear infinite
+
+    }
+
+@keyframes a { to { stroke-dashoffset: 0px } }
+
+
+
+@font-face
+
+    {
+
+	   font-family: "UniSans1";
+	   src: url('../fonts/unisansthin.otf');
+
+    }
+
+@font-face
+
+    {
+
+	   font-family: "UniSans1";
+        font-style: italic;
+	   src: url('../fonts/unisansthinitalic.otf');
+
+    }
+
+@font-face
+
+    {
+
+	   font-family: "UniSans2";
+	   src: url('../fonts/unisansheavy.otf');
+
+    }
+
+@font-face
+
+    {
+
+	   font-family: "UniSans2";
+        font-style: italic;
+	   src: url('../fonts/unisansheavyitalic.otf');
+
+    }
+
+
+
+body /* Style du corps du site */
+
+    {
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color:white;
+    }
+
+.wrap /* Wrap pour garder le contenu au centre */
+
+    {
+
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 100px;
+
+    }
+
+
+
+
+a
+
+    {
+
+        text-decoration: none;
+        color: white;
+
+    }
+
+header
+
+    {
+
+        position: relative;
+        width: 100%;
+        height: 750px;
+
+        font-size: 25px;
+
+        background: linear-gradient(
+
+            rgba(154, 25, 23, 0.80),
+            rgba(154, 25, 23, 0.80)
+
+        ) ,url(../images/background_header.jpg);
+
+        background-size:cover;
+
+    }
+
+header p
+
+    {
+
+        font-weight: 100;
+        letter-spacing:2px;
+        font-size: 30px;
+
+    }
+
+header:after
+
+    {
+
+        position: absolute;
+        content: '';
+        top: 500;
+        left: 100;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        background: white;
+        transform-origin: top right;
+        transform: skewY(-7deg);
+        z-index: 2;
+
+    }
+
+.header_content
+
+     {
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+         height: 80%;
+
+    }
+
+.wrap
+
+    {
+
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 150px;
+
+    }
+
+header .wrap
+
+    {
+
+
+
+    }
+
+.hamburgermenu
+
+   {
+
+        display:flex;
+        justify-content: flex-end;
+        width: 90%;
+
+    }
+
+#hamburger /* Bouton du menu hamburger (voir tout en bas pour la suite du menu en dÃ©veloppement) */
+
+    {
+
+        position: relative;
+        width: 45px;
+        height: 45px;
+        background-color:white;
+        border-radius:50%;
+        top: 0;
+
+    }
+
+#hamburger:hover
+
+    {
+
+        cursor:pointer;
+
+    }
+
+
+#hamburger span /* Les 3 traits du menu hamburger */
+
+    {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        transition: background 0.5s;
+
+    }
+
+
+#hamburger span::before, #hamburger span::after
+
+    {
+
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-6px);
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        transition: transform 0.5s;
+
+    }
+
+
+#hamburger span::after
+
+    {
+
+        transform: translateY(6px);
+
+    }
+
+
+#hamburger:hover span::before
+
+    {
+
+        transform: translateY(-8px);
+
+    }
+
+
+#hamburger:hover span::after
+
+    {
+
+        transform: translateY(8px);
+
+    }
+
+
+#hamburger.is-opened span
+
+    {
+
+        background: transparent;
+
+    }
+#hamburger.is-opened span::before
+
+    {
+
+        transform: translateY(0) rotate(45deg);
+
+    }
+
+#hamburger.is-opened span::after
+
+    {
+
+        transform: translateY(0) rotate(-45deg);
+
+    }
+
+.responsivemenu
+
+    {
+
+        position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+
+    }
+
+
+
+.couronne
+
+    {
+
+        position:absolute;
+        right:0;
+        top:585px;
+        z-index: -2;
+        max-width: 373px;
+        height: auto;
+        z-index: 3;
+        overflow: hidden;
+
+
+    }
+
+
+
+#topmenu
+
+    {
+
+        display:flex;
+        justify-content: flex-end;
+        font-family: 'UniSans1';
+
+    }
+
+#onemenu
+
+    {
+
+
+
+    }
+
+
+#onemenu:hover
+
+    {
+
+        transition: all 0.3s;
+        opacity: 0.7;
+
+    }
+
+li
+
+    {
+
+        margin-right: 40px;
+
+    }
+
+.principal_content
+
+
+    {
+
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+.iconers
+
+    {
+
+        width:50px;
+        height: 50px;
+        margin-bottom: 10px;
+        opacity: 1;
+
+    }
+
+.iconers:hover
+
+    {
+
+        opacity: 0.8;
+        cursor: pointer;
+        transition: all 0.5s;
+
+    }
+
+#chambery
+
+    {
+
+        font-weight: 400;
+
+    }
+
+
+
+.content_left
+
+    {
+
+        display:flex;
+        flex-direction: column;
+
+    }
+
+.content_right h1
+
+    {
+
+        font-family: 'UniSans1';
+        font-size: 80px;
+
+    }
+
+.content_right h2
+
+    {
+
+        font-family: 'UniSans2';
+        font-style: italic;
+        font-size: 90px;
+
+    }
+
+#logoframmi
+
+    {
+
+        width:550px;
+
+    }
+
+.anniv
+
+    {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+.ml1    {
+
+margin-bottom: 15px;
+
+}
+
+
+
+.ml1 .letter {
+
+  display: inline-block;
+}
+
+.ml1 .text-wrapper
+
+    {
+
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+
+    }
+
+.ml1 .line
+
+    {
+
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        transform-origin: 0 0;
+
+    }
+
+.ml1 .line1
+
+    {
+
+        top: 0;
+
+    }
+
+.ml1 .line2
+
+    {
+
+        bottom: 0;
+
+
+    }
+
+
+
+.contenu
+
+    {
+
+        color:#111111;
+        height:1310px;
+        font-family: 'Lato', sans-serif;
+        display:flex;
+        z-index: 6;
+
+    }
+
+.contenu .wrap
+
+    {
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 6;
+
+
+
+    }
+
+.festival h1
+
+    {
+
+        font-family: 'UniSans1';
+        font-size:45px;
+        font-style: italic;
+    }
+
+.festival p
+
+    {
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size:26px;
+
+    }
+
+#typed
+
+    {
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size:26px;
+
+    }
+
+.festival span
+
+    {
+
+        font-family: 'UniSans2';
+
+    }
+
+.desc
+
+    {
+
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+.desc h2
+
+    {
+
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+
+.desc p
+
+    {
+
+        font-weight: 300;
+
+    }
+
+.desc div
+
+    {
+
+        text-align: center;
+
+    }
+
+#descta
+
+    {
+
+        resize: none;
+
+    }
+
+#iconedesc
+
+    {
+
+        margin-bottom: 55px;
+        max-width: 100%;
+        height: auto;
+
+    }
+
+.box_festival
+
+    {
+
+        border-width: 0px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+        padding: 20px 20px 20px 20px;
+        z-index: 100;
+        background-color: white;
+
+    }
+
+#left-leaf
+
+    {
+
+        position:absolute;
+        z-index: -10;
+        left: 90px;
+
+    }
+
+#right-leaf
+
+    {
+
+        position:absolute;
+        z-index: -10;
+        right: 90px;
+
+
+    }
+
+
+
+#pres_festival
+
+    {
+
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+
+    }
+
+#pres_festival span
+
+    {
+
+        font-weight: bold;
+
+    }
+
+.aftermovie
+
+    {
+
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+
+    }
+
+.aftermovie h2
+
+    {
+
+        font-family: 'UniSans2';
+        font-style: italic;
+        font-size: 36px;
+
+    }
+
+.aftermovie p
+
+    {
+
+        font-family: 'Lato', sans-serif;
+        font-size: 36px;
+
+    }
+
+.aftermovie_left
+
+  {
+      text-align:center;
+  }
+
+#ytvideo
+
+    {
+
+        width:560px;
+        height:315px;
+
+    }
+
+
+
+
+#aftermovieimg
+
+    {
+
+        max-width: 100%;
+        height:auto;
+
+    }
+
+
+.inscriptions
+
+    {
+
+        width: 100%;
+        height: 240px;
+        background-color: #991914;
+        color:white;
+
+    }
+
+.inscriptions_overlay
+
+    {
+
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: all .3s linear;
+        opacity: 0;
+        display: none;
+
+
+    }
+
+.inscriptions_form
+
+    {
+
+        background-color: white;
+        width: 60%;
+        height: 70%;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        z-index: 21;
+        color:black;
+        font-family: "UniSans2";
+        font-style: italic;
+        font-size: 45px;
+        padding: 50px 50px 50px 50px;
+        position: fixed;
+        overflow-x: hidden;
+        transition: all .3s linear;
+        display:none;
+        opacity: 0;
+
+    }
+
+.is-visible {
+
+    display: block;
+
+}
+
+.is-open {
+
+    opacity:1;
+
+}
+
+.inscriptions_form h1
+
+    {
+
+        margin-bottom: 20px;
+
+    }
+
+.form_inscriptions
+
+    {
+
+        font-size: 18px;
+        color: grey;
+        font-family: "Lato";
+        font-weight: 200;
+        font-style: italic;
+
+    }
+
+::placeholder
+
+
+    {
+
+        font-size: 18px;
+        color: grey;
+        font-family: "Lato";
+        font-weight: 200;
+        font-style: italic;
+
+    }
+
+.formblock
+
+    {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 430px;
+        width: 100%;
+
+    }
+
+.btn_categories
+
+    {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+.btn_categories input
+
+    {
+
+        background-color: black;
+        border-width: 6px;
+        border-style: solid;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 5px 6px 5px;
+        border-color: #eab830;
+        font-family: 'UniSans2';
+        width: 24%;
+
+    }
+
+.btn_categories input:hover, .btn_categories input:focus
+
+    {
+
+        color:white;
+        background-color: #eab830;
+        transition: all .3s;
+
+    }
+
+
+
+#envoyerbtn
+
+    {
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+.nom_prenom
+
+    {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+input
+
+    {
+
+        width: 40%;
+
+    }
+
+input#inputprenom, input#inputname
+
+    {
+
+        width: 47%;
+
+    }
+
+input#inputemail, input#inputformation, input#titrerea, input#linktel
+
+    {
+
+        width: 100%;
+
+    }
+
+input[type=submit]
+
+    {
+
+        border-width: 6px;
+        border-style: solid;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 20px 5px 20px;
+        font-family: 'UniSans2';
+        font-size: 20px;
+        border-color: #eab830;
+        /*  border-image: linear-gradient(to right, #cf870a 0%, #eab830 100%); */
+        border-image-slice: 1;
+        width: auto;
+
+    }
+
+input[type=submit]:hover
+
+    {
+
+        background-color: #eab830;
+        color:white;
+        transition: all .4s;
+
+    }
+
+ select
+
+    {
+
+        outline: none;
+        -webkit-appearance: none;
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 40px;
+        transition: border-color 0.2s;
+        border-width: 4px;
+        border-style: solid;
+        border-radius: 6px;
+        border-color: #eab830;
+        background: #eab830;
+        font-size: 18px;
+        font-family: 'UniSans2';
+        text-align: center;
+        color: white;
+        text-align-last:center;
+
+
+    }
+
+ select:hover
+
+    {
+
+        cursor:pointer;
+        opacity: 0.8;
+
+    }
+
+
+option.select_text select
+
+    {
+
+        text-align: center;
+
+    }
+
+.close
+
+    {
+
+        position: absolute;
+        top: 50px;
+        right: 70px;
+        transition: all 200ms;
+
+    }
+
+.close:hover
+
+    {
+
+        opacity: 0.3;
+        transition: all .1s;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+.inscriptions .wrap
+
+    {
+
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+.inscriptions_left
+
+    {
+
+        text-align: center;
+
+    }
+
+
+
+.inscriptions_left h2
+
+    {
+
+        font-size: 36px;
+        font-family: 'UniSans2';
+        font-style: italic;
+
+    }
+
+.inscriptions_left p
+
+    {
+
+        font-family: 'Lato', sans-serif;
+        font-size: 36px;
+
+    }
+
+.inscriptions_right
+
+    {
+
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+
+    }
+
+.inscriptions_right h2
+
+    {
+
+        font-size: 30px;
+        font-family: 'UniSans2';
+
+    }
+
+
+.btn_insc, .btn_reglement
+
+    {
+
+        border-width: 4px;
+        border-style: solid;
+        border-radius: 6px;
+        border-color: #eab830;
+        padding: 8px 8px 2px 8px;
+        background-color: #991914;
+        color: white;
+
+    }
+
+.btn_insc:hover, .btn_reglement:hover
+
+    {
+
+        background-color: #eab830;
+        transition: all 0.5s;
+
+    }
+
+
+.jurys
+
+    {
+
+        color:black;
+        height: 600px;
+        display: flex;
+
+
+    }
+
+
+.jurys h1
+
+    {
+
+        font-family: 'UniSans1';
+        font-size:45px;
+
+    }
+
+.jurys p
+
+    {
+
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size:24px;
+        line-height: 30px;
+
+    }
+
+#categories_desc
+
+    {
+
+        text-align: center;
+
+    }
+
+#categories_desc span
+
+    {
+
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+
+    }
+
+.jurys span
+
+    {
+
+        font-family: 'UniSans2';
+
+    }
+
+
+.categories2
+
+    {
+
+        display: flex;
+        flex-wrap: wrap;
+        height: 72%;
+        justify-content: space-around;
+        align-items:center;
+        display:none;
+    }
+
+.categories2 h1
+
+    {
+
+        font-size: 40px;
+        font-family: 'UniSans2';
+
+    }
+
+.categories2 p
+
+    {
+
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        line-height: 30px;
+
+    }
+
+.categories2 div
+
+    {
+
+        width:40%;
+        text-align:center;
+        height: 40%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+.categories2 div h2
+
+    {
+
+        font-size: 30px;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+.categories2 div h2 span
+
+    {
+
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+#imgcategorie
+
+    {
+
+        max-width: 100%;
+        height: auto;
+
+    }
+
+
+
+
+
+#imgslider
+
+    {
+
+        max-width: 100%;
+        height:auto;
+
+    }
+
+
+
+.jurys .wrap
+
+    {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+
+    }
+
+
+footer
+
+    {
+
+        height: 500px;
+        background-color: #991914;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+
+
+    }
+
+footer h1
+
+    {
+
+        font-family: 'UniSans2';
+        font-style: italic;
+        font-size: 45px;
+
+    }
+
+footer .wrap
+
+    {
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+.contact
+
+    {
+
+        display:flex;
+        height: 70%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+#mapcongres
+
+    {
+
+        width: 500px;
+        height: 300px;
+        position: relative;
+
+    }
+
+
+
+
+.contact h2
+
+    {
+
+        font-size: 26px;
+
+    }
+
+.logos
+
+    {
+
+        display:flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+
+
+#logofewz
+
+    {
+
+        width: 132px;
+        height: 113px;
+
+    }
+
+
+#logosmmi
+
+    {
+
+        width: 130px;
+        height: 69px;
+
+    }
+
+
+.Rectangle_15 {
+  border-width: 0px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  left: 116px;
+  top: 1310px;
+  width: 1222px;
+  height: 214px;
+  z-index: 196;
+}
+
+
+
+
+.overlay {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'UniSans1';
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+    cursor:pointer;
+}
+
+.overlay_rs {
+    display:flex;
+    justify-content: center;
+    padding-top: 85px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  }
+
+    .typed-cursor {
+
+        font-size: 27px;
+
+    }
+
+
+
+.form-error{
+  background-color:rgba(254,213,214,1);
+  color:rgba(123,11,29,1);
+  border-radius:10px;
+  padding: 15px 1px 1px 1px;
+  text-align:center;
+}
+
+.form-success{
+  background-color:rgba(206,239,217,1);
+  color:rgba(17,103,43,1);
+  border-radius:10px;
+  padding: 15px 1px 1px 1px;
+  text-align:center;
+}

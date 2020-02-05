@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+body{
+ font-family: 'Lato', sans-serif;
+ display:block;
+ margin-left:auto;
+ margin-right:auto;
+ height:100%;
+ width:100%;
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#logo{
+  width:20%;
+  padding:2% 2% 2% 2%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+#menu {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+#menu ul {
+  list-style-type:none;
+}
+#menu ul li {
+  display: inline;
+  padding : 0 1.5em;
+}
+#menu ul li a {
+  color:#111111;
+  text-decoration:none;
+  transition: 1s;
+  font-size:1.3em;
+}
+#menu ul li a:hover {
+  color:#991914;
+  font-size:1.5em;
+}
+#content{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+}
+#Title{
+  padding: 2% 2% 2% 2%;
+}
+#form_particip{
+  width:45%;
+  height:520px;
+}
+#tab{
+  text-align:center;
+}
+.bloc{
+  width:45%;
+  margin: 1% 1% 1% 1%;
+  background-color: #111111;
+  height:520px;
+  color:white;
+  border-radius:15px;
+}
+.bloc h1{
+  padding:5% 1% 1% 1%;
+  text-align:center;
+}
+.bloc p{
+  font-size: 1.5em;
+  padding: 3% 0% 0% 0%;
+  text-align: center;
+}
+.button_form{
+  background-color:#e0ae26;
+  border-color:#cf870a;
+  color:black;
+  margin-left:1%;
+}
+.button_form:hover{
+  border-color:#e0ae26;
+  background-color:#cf870a;
+}

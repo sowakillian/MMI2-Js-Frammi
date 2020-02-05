@@ -1,0 +1,1202 @@
+
+/*
+responsive.css
+---------
+
+*/
+
+@media screen and (max-width: 1240px)
+    
+    {
+        
+    #logoframmi
+
+    {
+
+        width:420px;
+          
+    }
+        
+      .content_right h1 
+
+    {
+
+        font-size: 70px;
+
+    }
+        
+    .content_right h2
+
+    {
+
+        font-size: 80px;
+          
+    }
+        
+    #ytvideo
+
+    {
+
+        width:420px;
+        height:236.25px;
+  
+    }
+        
+    #mapcongres
+
+    {
+    
+        width: 450px;
+        height: 300px;
+        position: relative;
+  
+    }
+        
+    .contact h1
+
+    {
+    
+        font-size: 35px;
+  
+    }
+        
+    .contact h2
+
+    {
+    
+        font-size: 20px;
+  
+    }
+        
+    #logofewz
+
+    {
+    
+        width: 92.4px;
+        height: 79.1px;
+  
+    }
+        
+    .contact
+        
+    {
+    
+        height: 55%;
+  
+    }
+        
+   #logosmmi
+
+    {
+    
+        width: 78px;
+        height: 40.8px;
+  
+    }
+        
+    .logos
+
+    {
+    
+        justify-content: space-around;
+  
+    }
+        
+    footer
+        
+     {
+    
+        height: 400px;
+  
+    }
+        
+.inscriptions_form h1 
+
+        {
+
+            font-size: 30px;
+
+        }
+        
+.btn_categories input
+
+    {
+    
+        font-size: 14px;
+        
+    }
+
+        
+        
+    
+          
+    }
+
+
+@media screen and (max-width: 1180px)
+    
+    {
+        
+    .couronne 
+
+        {
+
+            display:none;
+
+        }
+        
+    #mapcongres
+
+        {
+
+            width: 400px;
+            height: 250px;
+
+        }
+        
+        
+        
+        
+    
+          
+    }
+
+
+@media screen and (max-width: 1024px)
+    
+    {
+       
+    #right-leaf, #left-leaf
+
+    {
+        
+        display:none;
+        
+    }
+        
+        
+    header:after
+        
+    {
+
+        height: 150px;
+          
+    }
+        
+    .content_right h1 
+
+    {
+
+        font-size: 60px;
+
+    }
+        
+    .content_right h2
+
+    {
+
+        font-size: 70px;
+          
+    }
+    
+    .contenu 
+
+        {
+
+            height: 1000px;
+
+        }
+        
+    #logoframmi
+
+    {
+
+        width:400px;
+          
+    }
+       
+      .couronne 
+
+        {
+
+            display:none;
+
+        }
+        
+        
+    .iconers
+
+    {
+
+        width:36px;
+        height: 36px;
+          
+    }
+        
+
+        
+    #onemenu
+
+    {
+
+        font-size: 20px;
+          
+    }
+        
+    .wrap 
+
+    {
+
+        max-width: 824px;
+        margin: 0 auto;
+        padding: 0 100px;
+          
+    }
+        
+    .festival h1
+
+    {
+
+        font-size: 35px;
+          
+    }
+        
+    .desc h2
+
+    {
+
+        font-size: 20px;
+          
+    }
+        
+    .desc p
+
+    {
+
+        font-size: 19px;
+          
+    }
+        
+     #pres_festival
+
+        {
+
+            font-size: 15px;
+          
+        }
+        
+    .jurys h1
+
+        {
+
+            font-size: 35px;
+          
+        }
+        
+    .jurys p
+
+        {
+
+            font-size: 15px;
+          
+        }
+        
+    .aftermovie h2, .aftermovie p
+
+        {
+
+            font-size: 28px;
+          
+        }
+        
+    .inscriptions_right 
+
+    {
+
+        flex-direction: column;
+        height: 55%;
+        align-items: center;
+        
+    }
+
+    #aftermovieimg 
+
+        {
+
+            max-width: 75%;
+
+        }
+        
+    .aftermovie_left
+
+        {
+
+            text-align: center;
+
+        }
+        
+    .aftermovie_right
+
+        {
+
+            text-align: right;
+
+        }
+        
+        #ytvideo
+
+    {
+
+        width:336px;
+        height:189px;
+  
+    }
+
+.inscriptions_form h1 
+
+        {
+
+            font-size: 25px;
+
+        }
+        
+        .close 
+
+        {
+
+            top: 40px;
+
+        }
+        
+        ::placeholder
+
+
+    {
+    
+        font-size: 15px;
+        
+    }
+        
+    
+        
+
+        
+        
+       
+        
+        
+    }
+        
+        
+
+@media all and (max-width: 980px)
+        
+    {
+        
+    header:after
+
+    {
+
+        height: 130px;
+          
+    }
+       
+        
+    .wrap 
+
+    {
+
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 0 100px;
+          
+    }
+        
+    .content_right h1 
+
+    {
+
+        font-size: 50px;
+
+    }
+        
+    .content_right h2
+
+    {
+
+        font-size: 50px;
+          
+    }
+        
+    .content_right h3
+
+    {
+
+        font-size: 20px;
+          
+    }
+        
+        #logoframmi
+
+    {
+
+        width:350px;
+          
+    }
+        
+        .desc h2
+
+    {
+
+        font-size: 17px;
+          
+    }
+        
+    .desc p
+
+    {
+
+        font-size: 16px;
+          
+    }
+        
+     header p
+
+    {
+
+        font-size: 20px;
+
+    }
+        
+    .inscriptions_left h2, .inscriptions_left p
+
+    {
+    
+        font-size: 28px;
+
+    }
+        
+    .aftermovie h2, .aftermovie p 
+
+        {
+
+            font-size: 23px;
+
+        }
+        
+    #mapcongres
+
+        {
+
+            width: 300px;
+            height: 250px;
+
+        }
+        
+    .contact h1
+        
+        {
+
+            font-size: 25px;
+
+        }
+        
+     .contact h2, .contact p
+        
+        {
+
+            font-size: 16px;
+
+        }
+        
+        
+    .btn_categories input
+
+    {
+    
+        font-size: 12px;
+        border-width: 4px;
+        
+    }
+        
+        
+        
+       
+      
+        
+        
+     
+        
+    }
+
+@media all and (max-width: 830px)  
+    
+    {
+        
+    .formblock
+
+    {
+    
+        height: 360px;
+        
+    }
+        
+     footer .wrap
+        
+    {
+         
+       flex-direction: column; 
+       justify-content: space-around;
+        
+    }
+        
+        footer
+
+    {
+
+    height: 490px;
+
+    }
+        
+        #mapcongres {
+    width: 380px;
+    height: 180px;
+}
+        
+        
+}
+
+
+
+@media all and (max-width: 767px)  
+    
+    {
+        
+     header:after
+        
+    {
+        
+        height: 100px;
+     
+    }
+        
+        .content_right h1 
+
+    {
+
+        font-size: 40px;
+
+    }
+        
+    .content_right h2
+
+    {
+
+        font-size: 40px;
+          
+    }
+        
+     .content_right h3
+
+    {
+
+        font-size: 15px;
+          
+    }
+        
+      #logoframmi
+
+    {
+
+        width:270px;
+          
+    }
+        
+    #onemenu
+
+    {
+
+        font-size: 15px;
+          
+    }
+    
+    .inscriptions_left h2, .inscriptions_left p
+
+    {
+    
+        font-size: 24px;
+
+    }
+        
+    .inscriptions_right h2
+
+    {
+    
+        font-size: 24px;
+
+    }
+        
+    .inscriptions_right 
+
+    {
+
+        height: 50%;
+        
+    }
+        
+    .festival h1
+
+    {
+
+        font-size: 25px;
+        
+    }
+        
+    .jurys h1
+
+    {
+
+        font-size: 25px;
+        
+    }
+        
+    #typed
+        
+    {
+
+        font-size: 15px;
+        
+    }
+       
+    .wrap 
+
+    {
+
+        max-width: 617px;
+        margin: 0 auto;
+        padding: 0 75px;
+          
+    }
+        
+    .desc h2
+
+    {
+
+        font-size: 15px;
+          
+    }
+        
+    .desc p
+
+    {
+
+        font-size: 14px;
+          
+    }
+        
+    header 
+        
+    
+    {
+
+        height: 600px;
+          
+    }
+       
+    .header_content 
+        
+    
+    {
+
+        height: 80%;
+          
+    }
+        
+    .anniv p
+        
+    {
+
+        font-size: 15px;
+          
+    }
+        
+    
+    #iconedesc
+
+    {
+    
+        margin-bottom: 40px;
+        
+    }
+        
+    .pngplace, .pngbuffet, .pngcategories
+
+    {
+    
+        width:50%;
+        height: 50%;
+    }
+
+    .aftermovie
+        
+    {
+    
+        flex-direction: column;
+    }
+        
+    .aftermovie_left p
+        
+    {
+    
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+        
+    .aftermovie_right
+        
+    {
+    
+        text-align:center;
+    }
+        
+    .categories2 div h2
+        
+    {
+    
+        font-size: 22px;
+    }
+        
+        .categories2 
+        
+    {
+    
+       height: 80%;
+    }
+        
+    .jurys
+        
+        
+    {
+    
+       height: 500px;
+    }
+        
+    
+.inscriptions_form h1 
+
+        {
+
+            font-size: 22px;
+
+        }
+        
+.close 
+
+        {
+
+            width: 25px;
+            height: 25px;
+            top: 45px;
+
+        }
+
+       
+        
+    }
+
+
+@media all and (min-width: 600px)  
+    
+  
+          {
+              
+              
+
+
+    .hamburgermenu
+
+    {
+
+        display:none;
+          
+    }
+              
+              
+        }
+
+@media all and (max-width: 600px)  
+    
+  
+          {
+              
+              
+     select 
+
+    {
+     
+        font-size: 15px;      
+
+    }
+              
+#pres_festival {
+    
+    line-height: 19px;
+    
+}
+
+#topmenu
+
+    {
+
+        display:none;
+          
+    }
+        
+        
+    #onemenu
+
+    {
+
+        font-size: 10px;
+          
+    }
+              
+        .anniv p
+        
+    {
+
+        font-size: 12px;
+          
+    }
+              
+    .inscriptions
+              
+    {
+
+        height: 200px;
+          
+    }
+        
+    .inscriptions_right h2 
+
+    {
+
+        font-size: 18px;
+
+    }
+       
+              
+    .principal_content
+
+
+            {
+
+                flex-direction: column;
+                height:60%;
+        
+            }
+              
+     .content_left
+        
+        {
+
+        display:none;
+          
+        }
+        
+    
+        
+        
+
+        
+
+        
+    }
+
+
+    
+@media all and (max-width: 480px)
+        
+    {
+        
+        
+        .header_content
+        
+            {
+                
+                height: 85%;
+
+
+            }
+        
+        .couronne
+        
+            {
+                
+                display:block;
+                width: 25%;
+                height: auto;
+                top: 510px;
+
+            }
+        
+        
+        
+        .content_left
+        
+        {
+
+        display:none;
+          
+        }
+        
+        .principal_content
+
+
+            {
+
+                flex-direction: column;
+                height:60%;
+        
+            }
+        
+    .wrap 
+
+        {
+
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 0 40px;
+          
+        }
+        
+    .festival h1
+
+        {
+
+            font-size: 20px;
+          
+        }
+        
+         #iconedesc
+
+        {
+    
+            margin-bottom: 25px;
+        
+        }
+        
+        
+        
+        p#pres_festival
+        
+        
+        {
+
+            font-size: 15px;
+            line-height:19px;
+          
+        }
+        
+          p#categories_desc
+        
+        
+        {
+
+            font-size: 15px;
+            line-height:19px;
+          
+        }
+        
+        .contenu
+
+        {
+    
+            height: 930px;
+  
+        }
+        
+        .inscriptions .wrap
+        
+        {
+    
+            flex-direction: column;
+            justify-content: space-around;
+  
+        }
+        
+        .inscriptions_right
+        
+        {
+    
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            height: 25%;
+  
+        }
+        
+        .jurys
+
+    {
+    
+        height: 450px;
+
+        
+    }
+        
+::placeholder
+
+
+        {
+    
+            font-size: 13px;
+        
+        }
+        
+    .close 
+
+        {
+
+            top: 56px;
+
+        }
+        
+        
+@media all and (max-width: 420px)
+        
+    {
+        
+        #mapcongres     
+        
+            {
+
+                width: 340px;
+                height: 180px;
+
+            }
+        
+         .wrap 
+
+        {
+
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 0 40px;
+          
+        }
+        
+            select 
+
+
+        {
+     
+            font-size: 12px;    
+
+        }
+        
+        #ytvideo
+
+    {
+
+        width:285.6px;
+        height:160.65px;
+  
+    }
+        
+    }
+        
+        
+@media all and (max-width: 380px)
+        
+    {
+        
+        #mapcongres     
+        
+            {
+
+                width: 300px;
+                height: 160px;
+
+            }
+        
+         .wrap 
+
+        {
+
+            max-width: 280px;
+            margin: 0 auto;
+            padding: 0 40px;
+          
+        }
+        
+    }
+        
+    
+@media all and (max-width: 360px)
+        
+    {
+        
+        
+         .wrap 
+
+        {
+
+            max-width: 290px;
+            margin: 0 auto;
+            padding: 0 15px;
+          
+        }
+        
+        .jurys h1 
+
+        {
+
+            font-size: 20px;
+
+        }
+        
+        .anniv p 
+
+        {
+
+            display: none;
+
+        }
+        
+        .festival h1
+        
+
+        {
+
+            font-size: 17px;
+
+        }
+        
+        #typed
+        
+
+        {
+
+            font-size: 12px;
+
+        }
+        
+        #mapcongres
+        
+
+        {
+
+            width: 270px;
+
+        }
+        
+    }
+      
+        
+         
+       
+       
+                
+    }
+    
